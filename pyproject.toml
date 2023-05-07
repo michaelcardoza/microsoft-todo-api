@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "todo-api-python"
+version = "0.1.0"
+description = ""
+authors = ["michaelcardoza <mc.michaelcardoza@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
+sqlalchemy = "^2.0.9"
+psycopg2-binary = "^2.9.6"
+loguru = "^0.7.0"
+alembic = "^1.10.3"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
